@@ -168,7 +168,7 @@ a {
 }
 .catopen {
   max-height: 100px;
- background-color: red;
+ 
  
 }
 
@@ -743,3 +743,11 @@ footer {
 }
 
 
+
+/* #phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+} */

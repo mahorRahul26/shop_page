@@ -17,6 +17,7 @@ import { IoLogoInstagram } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { MdCall } from "react-icons/md";
 
 
 function Home() {
@@ -93,9 +94,9 @@ function Home() {
                   <li><a href="#products"> Dry Fruits</a> </li>
                 </ul>
               </li>
-              <li><Link to=""> Products </Link></li>
-                <li> <Link to=""> About Us </Link></li>
-                <li> <Link to=""> Contact </Link></li>
+              <li><Link to="#products"> Products </Link></li>
+                <li> <Link to="#footer-section"> About Us </Link></li>
+                <li> <Link to="#footer-section"> Contact </Link></li>
             </ul>
 
         </div>
@@ -403,21 +404,26 @@ function Home() {
         <div  class="footer-content">
             <div id="footer-section" class="footer-section">
                 <h3>About Us</h3>
-                <p>We're dedicated to bringing you the finest quality dried fruits from around the world.</p>
+                <p>We're dedicated to bringing you the finest quality dried fruits <br />from around the world.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
-                <a href="#home">Home</a>
+                <a href="#hero_section">Home</a>
                 <a href="#products">Products</a>
               
-                <a href="#test">Testimonials</a>
+                <a href="#test">Reviews</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <p>Email: info@naturalgoodness.com</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Address: 123 Fruit Street, Orchard City</p>
+                <p><a href="https://www.google.com/maps/place/Shudhham+by+TANISH+ENTERPRISES/@22.7522076,75.9072297,16.32z/data=!4m6!3m5!1s0x3962e34683f4d993:0xaa8d0b229d2271d0!8m2!3d22.7544968!4d75.9119763!16s%2Fg%2F11y9b5zv2f?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D">
+                Email: info@naturalgoodness.com
+                </a></p>
+                <p id="phone">Phone: (555) 123-4567 </p> {/*for link whatsapp https://wa.me/1XXXXXXXXXX 
+                                                         Example: https://wa.me/?text=I'm%20inquiring%20about%20the%20apartment%20listing*/}
+
+                <p>Address: Building, 15, MR 1, near medihub clinic, <br />
+                    Mahalaxmi Nagar, Indore, Madhya Pradesh 452010</p>
             </div>
         </div>
        
@@ -425,7 +431,7 @@ function Home() {
             <a href="#" id="link_icon1"><FaFacebook size={28} /></a>
             <a href="#" id="link_icon2"><IoLogoInstagram  size={24} /></a>
             <a href="#" id="link_icon3"><FaTwitter size={24}/></a>
-            <a href="https://maps.app.goo.gl/ZatVHgorbVkpqpfz8 " id="link_icon4"><IoLogoWhatsapp size={28} /></a>
+            <a href="#" id="link_icon4"><IoLogoWhatsapp size={28} /></a>
         </div>
         <div class="copyright">
             &copy; 2025 Shudhham. All rights reserved.
