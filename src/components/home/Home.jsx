@@ -18,7 +18,10 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdCall } from "react-icons/md";
-
+import { FaArrowUp } from "react-icons/fa";
+import { EffectCards } from 'swiper/modules';
+// import 'swiper/css';
+import 'swiper/css/effect-cards';
 
 function Home() {
 
@@ -106,12 +109,41 @@ function Home() {
       </nav>
 
       <section id="hero_section">
-        <div id="hero">
+        {/* <div id="hero">
           <h1 class="cursor typewriter-animation">
             Enrich with goodness and purity .</h1>
           <p>- Tanish Enterprise</p>
+        </div> */}
+        {/* <div id="testheading">
+        <div id='rssBlock'>
+   <p class="cnnContents">
+       <span class="marqueeStyle">&nbsp;continuous infinite text loop 1 continuous infinite text loop 2 </span>
+        <span class="marqueeStyle2">&nbsp;continuous infinite text loop 3 continuous infinite text loop 4&nbsp;</span>
+      </p>
+      </div>
+        </div> */}
+        <div id="hero2">
+        <div class="marquee">
+          <span>WellCome In Our Shop🙏&nbsp;</span>
+          <span>WellCome In Our Shop🙏&nbsp;</span>
+          <span>WellCome In Our Shop🙏&nbsp;</span>
+          <span>WellCome In Our Shop🙏&nbsp;</span>
+        
         </div>
-        {/* <div id="producttest"></div> */}
+        </div>
+      </section>
+      <section id="heroscroll">
+          <div className="marquee2">
+          <span>WellCome In Our Shop🙏 &nbsp; &nbsp;</span>
+          <span>WellCome In Our Shop🙏 &nbsp;&nbsp;</span>
+          <span>WellCome In Our Shop🙏 &nbsp;&nbsp;</span>
+          <span>WellCome In Our Shop🙏 &nbsp;&nbsp;</span>
+          <span>WellCome In Our Shop🙏 &nbsp;&nbsp;</span>
+          <span>WellCome In Our Shop🙏 &nbsp;&nbsp;</span>
+          <span>WellCome In Our Shop🙏 &nbsp;&nbsp;</span>
+          <span>WellCome In Our Shop🙏 &nbsp;&nbsp;</span>
+          
+          </div>
       </section>
      
       {/* products */}
@@ -205,7 +237,7 @@ function Home() {
                     
                 </div>
             </div>
-            <div data-aos="flip-left" data-aos-delay="100" class="product-card">
+            <div data-aos="flip-left" data-aos-delay="1000" class="product-card">
                 <img src="images/giftimage.jpg" alt="Dried Cranberries"/>
                 <div class="product-info">
                     <h3>Dried Cranberries</h3>
@@ -275,7 +307,7 @@ function Home() {
         <div class="feature-cards">
           <div class="feature-card">
             <img src="./images/image2.jpg" alt="Natural" />
-            <h3>100% Natural</h3>
+            <h3>1000% Natural</h3>
             <p>
               No added sugars, preservatives, or artificial flavors — just pure,
               natural fruit goodness.
@@ -352,7 +384,7 @@ function Home() {
                     
                 </div>
                 <div id="testimonial-cards2" class="testimonial-cards">
-                <Swiper
+                {/* <Swiper
                   slidesPerView={1}
                   spaceBetween={30}
                   centeredSlides={true}
@@ -393,8 +425,44 @@ function Home() {
                   </div>
                   </SwiperSlide>
                  
-                </Swiper>
+                </Swiper> */}
                 
+               <div id="secSlide">
+               <Swiper
+                effect={'cards'}
+                grabCursor={true}
+                // loop={true}
+                autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: false,
+                  }}
+                modules={[EffectCards,]}
+                className="mySwiper"
+              >
+                <SwiperSlide><div class="testimonial-card">
+                      <p>"These dried fruits are absolutely delicious! The mangoes taste like candy but are completely natural. I'm a customer for life!"</p>
+                      <div class="author">- Sarah Johnson</div>
+                  </div></SwiperSlide>
+                <SwiperSlide><div class="testimonial-card">
+                      <p>"These dried fruits are absolutely delicious! The mangoes taste like candy but are completely natural. I'm a customer for life!"</p>
+                      <div class="author">- Sarah Johnson</div>
+                  </div></SwiperSlide>
+                <SwiperSlide><div class="testimonial-card">
+                      <p>"These dried fruits are absolutely delicious! The mangoes taste like candy but are completely natural. I'm a customer for life!"</p>
+                      <div class="author">- Sarah Johnson</div>
+                  </div></SwiperSlide>
+                <SwiperSlide><div class="testimonial-card">
+                      <p>"These dried fruits are absolutely delicious! The mangoes taste like candy but are completely natural. I'm a customer for life!"</p>
+                      <div class="author">- Sarah Johnson</div>
+                  </div></SwiperSlide>
+                {/* <SwiperSlide>Slide 5</SwiperSlide>
+                <SwiperSlide>Slide 6</SwiperSlide>
+                <SwiperSlide>Slide 7</SwiperSlide>
+                <SwiperSlide>Slide 8</SwiperSlide>
+                <SwiperSlide>Slide 9</SwiperSlide> */}
+              </Swiper>
+               </div>
+
                     
                 </div>
        
@@ -416,14 +484,14 @@ function Home() {
             </div>
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <p><a href="https://www.google.com/maps/place/Shudhham+by+TANISH+ENTERPRISES/@22.7522076,75.9072297,16.32z/data=!4m6!3m5!1s0x3962e34683f4d993:0xaa8d0b229d2271d0!8m2!3d22.7544968!4d75.9119763!16s%2Fg%2F11y9b5zv2f?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D">
+                <p><a href="#">
                 Email: info@naturalgoodness.com
                 </a></p>
                 <p id="phone">Phone: (555) 123-4567 </p> {/*for link whatsapp https://wa.me/1XXXXXXXXXX 
                                                          Example: https://wa.me/?text=I'm%20inquiring%20about%20the%20apartment%20listing*/}
 
-                <p>Address: Building, 15, MR 1, near medihub clinic, <br />
-                    Mahalaxmi Nagar, Indore, Madhya Pradesh 452010</p>
+                <p> <a href="https://www.google.com/maps/place/Shudhham+by+TANISH+ENTERPRISES/@22.7522076,75.9072297,16.32z/data=!4m6!3m5!1s0x3962e34683f4d993:0xaa8d0b229d2271d0!8m2!3d22.7544968!4d75.9119763!16s%2Fg%2F11y9b5zv2f?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D">Address: Building, 15, MR 1, near medihub clinic, <br />
+                Mahalaxmi Nagar, Indore, Madhya Pradesh 452010</a> </p>
             </div>
         </div>
        
@@ -437,6 +505,10 @@ function Home() {
             &copy; 2025 Shudhham. All rights reserved.
         </div>
     </footer>
+
+    <a id="top_arrow" href="#hero_section"><div id="topscroll">
+      <FaArrowUp size={24}/>
+    </div></a>
       
     </>
   );
